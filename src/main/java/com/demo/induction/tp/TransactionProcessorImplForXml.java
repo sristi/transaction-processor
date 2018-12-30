@@ -7,11 +7,10 @@ import java.io.InputStream;
 import java.util.List;
 
 import javax.xml.bind.JAXBContext;
-import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.demo.induction.tp.util.TransactionDrCrChecker;
 import com.demo.induction.tp.util.TransactionViolationChecker;
@@ -21,7 +20,7 @@ import com.demo.induction.tp.util.TransactionXmlWrapper;
  * @author suresh
  *
  */
-@Component(value="txProcessorForXmlData")
+@Service(value="txProcessorForXmlData")
 public class TransactionProcessorImplForXml implements TransactionProcessor{
 
 	@Autowired
