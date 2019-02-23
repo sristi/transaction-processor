@@ -30,7 +30,7 @@ public class TransactionXmlWrapper implements Serializable{
 		return transactionList;
 	}
 
-	public void setTransactionList(List<Transaction> transactionList) {
+/*	public void setTransactionList(List<Transaction> transactionList) {
 		this.transactionList = transactionList;
-	}
+	}*/
 }
